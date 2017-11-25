@@ -1,16 +1,13 @@
 <?php
-include_once ('class.php');
+include_once ('class_car_niva.php');
+include_once ('class_car_reno.php');
 
-$car=new myCar();
-$car->go ('вперед',40,200,1);
-echo '<br>';
-$niva = new myCar ();
-$niva->color="Зеленая";
-$niva->go('вперед',40,200,1);
+$niva = new niva_car();
+$niva->go('вперед',20,200,1);
 
 echo '<br>';
-$reno = new myCar();
-$reno->color="Красный";
+
+$reno = new Car();
 $reno->go('вперед',60,200,0);
 
 
